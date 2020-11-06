@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
-#include "Particle.h"
+
 class ofApp : public ofBaseApp{
 
 	public:
@@ -21,8 +21,5 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
-		//Ball ball = Ball(1,2);
-		vector<Particle> p;
-
-		double wind;
+		ofPolyline eyes1,eyes2,smile,smile1;
 };

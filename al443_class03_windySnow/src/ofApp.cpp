@@ -33,10 +33,10 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-	if (key == '1')  wind = 0.3;
-	if (key == '2') wind = 0.75;
-	if (key == '3') wind = -0.3;
-	if (key == '4') wind = -0.75;
+	if (key == '1')  wind = 0.25;
+	if (key == '2') wind = 0.55;
+	if (key == '3') wind = -0.25;
+	if (key == '4') wind = -0.55;
 	if (key == ' ') wind=0;
 }
 
