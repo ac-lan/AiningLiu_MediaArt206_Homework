@@ -1,3 +1,7 @@
+/*
+modeled on the particle example given in OpenFrameworks
+
+*/
 #pragma once
 #include "ofMain.h"
 class Particle{
