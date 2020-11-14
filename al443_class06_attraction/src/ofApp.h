@@ -23,8 +23,8 @@ public:
 	void gotMessage(ofMessage msg);
 
 	vector<Mover> movers;
-	int frame = 0;
-	bool left,right;
+	int frame = 0,factor=200;
+	bool left;
 	ofImage background,boy,girl;
 
 	int score;

@@ -4,7 +4,7 @@
 void ofApp::setup() {
 
 	ofBackground(0);
-	left = right = 0;
+	left = 0;
 	background.load("images/bg.jpg");
 	boy.load("images/boyy.jpg");
 	girl.load("images/girll.jpg");
@@ -15,7 +15,7 @@ void ofApp::setup() {
 void ofApp::update() {
 	if (frame > (1 << 27)) frame = 0;
 	frame++;
-	if (frame % 40 == 1) {
+	if (frame % 60 == 1) {
 		float posY = ofRandom(250, 500);
 		//ofMap(y, 0, 9, 0, ofGetHeight());
 		float posX = -5;
@@ -34,17 +34,17 @@ void ofApp::update() {
 		float distance = glm::length(diff);
 
 
-		if (left && distance != 0 && distance < 100) {
+		/*if (left && distance != 0 && distance < 100) {
 			// calc repulsion
 
 			glm::vec2 norm = diff / distance;
 			movers[i].applyForce(-norm);
-		}
-		if (right && distance != 0 && distance < 200) {
+		}*/
+		if (left && distance != 0 && distance < 200) {
 			// calc attraction
 
 			glm::vec2 norm = diff / distance;
-			movers[i].applyForce(norm*5);
+			movers[i].applyForce(norm*7);
 		}
 
 		movers[i].update();
@@ -60,6 +60,7 @@ void ofApp::update() {
 void ofApp::draw() {
 	background.draw(0, 0, ofGetWidth(), ofGetHeight());
 	//ofSetColor(0);
+	ofDrawBitmapString("\n hold left button of mouse to attract the heart. Help the boy to move all hearts to the girl!", 10, 20);
 	ofDrawBitmapString("Score: " + ofToString(score), 10, 20);
 	boy.draw(0, 250, 150, 250);
 	girl.draw(ofGetWidth() - 150, 250, 150, 250);
@@ -99,13 +100,11 @@ void ofApp::mouseDragged(int x, int y, int button) {
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button) {
 	if (button == 0) left = 1;
-	if (button == 2) right = 1;
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button) {
 	if (button == 0) left = 0;
-	if (button == 2) right = 0;
 }
 
 //--------------------------------------------------------------
