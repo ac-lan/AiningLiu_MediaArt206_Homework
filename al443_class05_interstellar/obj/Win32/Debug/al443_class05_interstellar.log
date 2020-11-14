@@ -1,11 +1,8 @@
-﻿  ofApp.cpp
-d:\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\libs\openframeworks\math\ofvec3f.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
-d:\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\libs\openframeworks\math\ofvec2f.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
-  al443_class05_interstellar.vcxproj -> D:\刘蔼宁大一上\Media Art 206\AiningLiu_MediaArt206_Homework\al443_class05_interstellar\bin\al443_class05_interstellar_debug.exe
+﻿  al443_class05_interstellar.vcxproj -> D:\刘蔼宁大一上\Media Art 206\al443_class05_interstellar\bin\al443_class05_interstellar_debug.exe
   
   	                   2	D:\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\libs\fmodex\lib\vs\Win32\
-  	  *多余文件   		 6018560	D:\刘蔼宁大一上\Media Art 206\AiningLiu_MediaArt206_Homework\al443_class05_interstellar\bin\FreeImage.dll
+  	  *多余文件   		 6018560	D:\刘蔼宁大一上\Media Art 206\al443_class05_interstellar\bin\FreeImage.dll
   
   	                   1	D:\of_v0.11.0_vs2017_release\of_v0.11.0_vs2017_release\libs\FreeImage\lib\vs\Win32\
-  	  *多余文件   		 1266176	D:\刘蔼宁大一上\Media Art 206\AiningLiu_MediaArt206_Homework\al443_class05_interstellar\bin\fmodex.dll
-  	  *多余文件   		 1312768	D:\刘蔼宁大一上\Media Art 206\AiningLiu_MediaArt206_Homework\al443_class05_interstellar\bin\fmodexL.dll
+  	  *多余文件   		 1266176	D:\刘蔼宁大一上\Media Art 206\al443_class05_interstellar\bin\fmodex.dll
+  	  *多余文件   		 1312768	D:\刘蔼宁大一上\Media Art 206\al443_class05_interstellar\bin\fmodexL.dll
