@@ -1,6 +1,6 @@
 #include "CustomParticle.h"
 CustomParticle::CustomParticle(b2World * world, float x, float y,int radius, int color,int sb) {
-	static string abc[10] = {"N2","NH3","H2","O2","NO3-","H+","NH4+","e-","micro","a"};
+	static string abc[10] = {"N2","NH3","H2","O2","NO3-","H+","NH4+","e-","org","a"};
 
 	setPhysics(1.0, 0.5, 0.3);
 	setup(world, x, y, radius);
@@ -34,7 +34,7 @@ void CustomParticle::draw() {
 		ofPushMatrix();
 		ofScale(textSize, textSize);
 		ofSetColor(255);
-		ofDrawBitmapString(theData->name, -5*textSize, textSize);
+		ofDrawBitmapString(theData->name, -7*textSize, textSize);
 		ofPopMatrix();
 
 		ofPopMatrix();
@@ -44,8 +44,21 @@ void CustomParticle::draw() {
 void CustomParticle::update() {
 	float xpos = getPosition().x;
 	float ypos = getPosition().y;
-	if (ypos <= 10 || ypos >= ofGetHeight()-10) {
+	if (ypos <= 10 || ypos >= ofGetHeight()-10 ) {
 		float vely = getVelocity().y;
 		setVelocity(getVelocity().x, -vely);
+	}
+	if (xpos <= ofGetWidth() / 3 - 10 || xpos >= 2 * ofGetWidth() / 3 - 10) {
+		float velx = getVelocity().x;
+		setVelocity(-velx, getVelocity().y);
+	}
+}
+
+void CustomParticle::update2() {
+	float xpos = getPosition().x;
+	float ypos = getPosition().y;
+	if (xpos <= 8 * ofGetWidth() / 9 ) {
+		float velx = getVelocity().x;
+		setVelocity(-velx, getVelocity().y);
 	}
 }

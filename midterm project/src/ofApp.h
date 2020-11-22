@@ -38,11 +38,13 @@ public:
 
 	ofxBox2dRect rect1,rect2,rect3,rect4;
 
-	bool                                  breakupIntoTriangles;
-	bool                                  bFill;
+	bool breakupIntoTriangles;
+	bool bFill;
+	bool down;
 	ofPolyline                            shape;
 	vector <shared_ptr<ofxBox2dPolygon>>  polyShapes;
-	ofImage plant;
+	ofImage plant,bg1,bg2,bg3;
+	bool first=true;
 
 	int goal;
 };
