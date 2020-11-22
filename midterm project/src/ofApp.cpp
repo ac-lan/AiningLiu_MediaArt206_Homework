@@ -289,6 +289,7 @@ void ofApp::draw() {
 
 		string info = "";
 		info += "Press c to clear everything\n";
+		info += "Press a to collect the goal particle\n";
 		info += "Press b to fill the polygon\n";
 		info += "Press t to break object up into triangles/convex poly: " + string(breakupIntoTriangles ? "true" : "false") + "\n";
 		info += "Press d to start/stop particles from falling down: " + string(down ? "true" : "false") + "\n";
