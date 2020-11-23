@@ -1,7 +1,8 @@
 ## AiningLiu_MediaArt206_Homework
  Homework repo for Computer Graphics 2020
 # midterm project: 
-Three levels, must finish the previous level to proceed to the next one
+Three levels, must finish the previous level to proceed to the next one;
+
 some solutions of level 1 and level 2 are in the midterm presentation slides for reference
 
 use mouse to create polygon.
