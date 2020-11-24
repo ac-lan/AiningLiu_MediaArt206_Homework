@@ -372,35 +372,18 @@ void ofApp::mousePressed(int x, int y, int button) {
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button) {
 	if (breakupIntoTriangles) {
-
-		// This is the manual way to triangulate the shape
-		// you can then add many little triangles
-
-		// first simplify the shape
 		shape.simplify();
-
-		// resample shape
 		auto resampled = shape.getResampledBySpacing(25);
-
-		// triangulate the shape, return am vector of traingles
 		auto tris = ofxBox2dPolygonUtils::triangulate(resampled);
-
-		// now loop through all the triangles and make a box2d triangle
 		for (int i = 0; i < tris.size(); i++) {
-
 			auto triangle = std::make_shared<ofxBox2dPolygon>();
-
 			triangle->addTriangle(ofDefaultVertexType(tris[i].a.x, tris[i].a.y, 0),
 				ofDefaultVertexType(tris[i].b.x, tris[i].b.y, 0),
 				ofDefaultVertexType(tris[i].c.x, tris[i].c.y, 0));
-
 			triangle->setPhysics(1.0, 0.3, 0.3);
-
 			triangle->create(box2d.getWorld());
-
 			polyShapes.push_back(triangle);
 		}
-
 	}
 	else {
 		auto poly = std::make_shared<ofxBox2dPolygon>();
@@ -411,7 +394,6 @@ void ofApp::mouseReleased(int x, int y, int button) {
 		polyShapes.push_back(poly);
 	}
 
-	// done with shape clear it now
 	shape.clear();
 }
 
