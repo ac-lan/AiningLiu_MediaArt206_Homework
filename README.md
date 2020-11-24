@@ -19,3 +19,9 @@ Features:
 5) create polygons that are filled with a color by pressing "b"
 
 Explore the Nitrogen Cycle! Get creative on tackling each level!
+# Homework for class 8:
+A prototype for an idea of my final project.
+
+Left click mouse to generate balls. Used openCV to detect the boundaries of different colors.
+
+There are two screenshots included to illustrate possible uses of this prototype.
