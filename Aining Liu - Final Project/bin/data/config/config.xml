@@ -1,0 +1,169 @@
+<config>
+    <name> 3d cannon shot </name>
+
+    <version> 1.0.0.0 </version>
+
+    <levels>
+
+        <!-- level 1 -->
+
+        <level>
+            <id>1</id>
+            <shots> 10 </shots>
+            <ships>  
+
+                <ship>
+                    <type>1</type>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>180</z>
+                    <vx>4</vx>
+                    <vz>0</vz>
+                </ship>
+
+                <ship>
+                    <type>1</type>
+                    <x>20</x>
+                    <y>0</y>
+                    <z>160</z>
+                    <vx>5</vx>
+                    <vz>0</vz>
+                </ship>
+
+            </ships>
+        </level>
+
+        <!-- level 2 -->
+
+        <level>
+            <id>2</id>
+            <shots> 15 </shots>
+            <ships>  
+                <ship>
+                    <type>1</type>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>170</z>
+                    <vx>8</vx>
+                    <vz>0</vz>
+                </ship>
+
+                <ship>
+                    <type>2</type>
+                    <x>20</x>
+                    <y>0</y>
+                    <z>160</z>
+                    <vx>9</vx>
+                    <vz>0</vz>
+                </ship>
+
+                <ship>
+                    <type>1</type>
+                    <x>40</x>
+                    <y>0</y>
+                    <z>140</z>
+                    <vx>8</vx>
+                    <vz>0</vz>
+                </ship>
+
+            </ships>
+        </level>
+
+        <!-- level 3 -->
+        
+        <level>
+            <id>3</id>
+            <shots> 20 </shots>
+            <ships>  
+                <ship>
+                    <type>1</type>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>180</z>
+                    <vx>8</vx>
+                    <vz>0</vz>
+                </ship>
+
+                <ship>
+                    <type>3</type>
+                    <x>20</x>
+                    <y>10</y>                    
+                    <z>170</z>
+                    <vx>10</vx>
+                    <vz>0</vz>
+                </ship>
+
+                <ship>
+                    <type>2</type>
+                    <x>40</x>
+                    <y>0</y>                    
+                    <z>140</z>
+                    <vx>12</vx>
+                    <vz>0</vz>
+                </ship>
+
+                <ship>
+                    <type>2</type>
+                    <x>40</x>
+                    <y>0</y>                    
+                    <z>120</z>
+                    <vx>10</vx>
+                    <vz>0</vz>
+                </ship>
+
+            </ships>
+        </level>
+
+        <!-- level 4 -->
+        
+        <level>
+            <id>4</id>
+            <shots> 20 </shots>
+            <ships>  
+                
+                <ship>
+                    <type>3</type>
+                    <x>0</x>
+                    <y>20</y>
+                    <z>160</z>
+                    <vx>8</vx>
+                    <vz>0</vz>
+                </ship>
+
+                <ship>
+                    <type>3</type>
+                    <x>20</x>
+                    <y>10</y>                    
+                    <z>140</z>
+                    <vx>10</vx>
+                    <vz>0</vz>
+                </ship>
+
+                <ship>
+                    <type>2</type>
+                    <x>40</x>
+                    <y>0</y>                    
+                    <z>80</z>
+                    <vx>12</vx>
+                    <vz>0</vz>
+                </ship>
+
+                <ship>
+                    <type>2</type>
+                    <x>40</x>
+                    <y>0</y>                    
+                    <z>70</z>
+                    <vx>16</vx>
+                    <vz>5</vz>
+                </ship>
+
+            </ships>
+        </level>
+
+
+    
+    
+    </levels>
+
+
+</config>

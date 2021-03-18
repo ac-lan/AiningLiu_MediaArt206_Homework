@@ -1,0 +1,18 @@
+newmtl Mat
+Ka 0.117647 0.117647 0.117647
+Kd 0.901961 0.803922 0.501961
+Ks 0.009725 0.009725 0.009725
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 10.556064
+d 1.000000
+Tr 0.000000
+Pr 0.000000
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.047059
+map_Kd 709cb03c.JPS 
+map_Bump Ash-1-Bump-1.JPS 
+disp Ash-1-Bump-1.JPS 
+adobe_map_Normal 8480051e.JPS 
+

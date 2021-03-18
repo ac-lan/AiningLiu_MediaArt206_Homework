@@ -1,0 +1,17 @@
+newmtl Game_dragon.004
+Ka 0.117647 0.117647 0.117647
+Kd 0.466667 0.145098 0.031373
+Ks 0.019451 0.019451 0.019451
+adobe_interior_color 0.803922 0.803922 0.803922
+Ns 10.556064
+d 1.000000
+Tr 0.000000
+Pr 0.000000
+Pm 0.000000
+adobe_density 0.000000
+adobe_translucence 0.000000
+adobe_glow 0.047059
+map_Kd Brick-1-Diffuse-1.JPS 
+map_Bump Brick-1-Bump-1.JPS 
+disp Brick-1-Bump-1.JPS 
+
